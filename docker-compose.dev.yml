@@ -1,0 +1,49 @@
+services:
+  # PostgreSQL dev
+  postgres-dev:
+    container_name: app-postgres-dev
+    image: postgres:15-alpine
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: docker
+      POSTGRES_DB: app_database
+      PGDATA: /data/postgres
+    volumes:
+      - postgres_dev_data:/data/postgres
+    networks:
+      - app-network-dev
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # RabbitMQ - Message Broker
+  rabbitmq-dev:
+    container_name: app-rabbitmq-dev
+    image: rabbitmq:3-management-alpine
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    environment:
+      RABBITMQ_DEFAULT_USER: admin
+      RABBITMQ_DEFAULT_PASS: admin
+    volumes:
+      - rabbitmq_dev_data:/var/lib/rabbitmq
+    networks:
+      - app-network-dev
+    healthcheck:
+      test: ["CMD", "rabbitmq-diagnostics", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+networks:
+  app-network-dev:
+    driver: bridge
+
+volumes:
+  postgres_dev_data:
+  rabbitmq_dev_data:

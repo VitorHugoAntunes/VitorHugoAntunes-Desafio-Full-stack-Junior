@@ -1,0 +1,50 @@
+{
+  "$schema": "https://turborepo.com/schema.json",
+  "ui": "tui",
+  "tasks": {
+    "build": {
+      "dependsOn": ["^build"],
+      "inputs": ["$TURBO_DEFAULT$", ".env*"],
+      "outputs": [".next/**", "!.next/cache/**", "dist/**", "build/**", "!.turbo/**"]
+    },
+    "lint": {
+      "dependsOn": ["^lint"]
+    },
+    "check-types": {
+      "dependsOn": ["^check-types"]
+    },
+    "dev": {
+      "cache": false,
+      "persistent": true
+    },
+    "test": {
+      "outputs": []
+    },
+    "test:e2e": {
+      "outputs": []
+    },
+    "db:clear": {
+      "cache": false
+    },
+    "db:seed": {
+      "cache": false
+    },
+    "migration:generate": {
+      "cache": false,
+      "outputs": ["migrations/**"]
+    },
+    "migration:create": {
+      "cache": false,
+      "outputs": ["migrations/**"]
+    },
+    "migration:run": {
+      "cache": false
+    },
+    "migration:revert": {
+      "cache": false
+    },
+    "migration:show": {
+      "cache": false
+    }
+  }
+}
