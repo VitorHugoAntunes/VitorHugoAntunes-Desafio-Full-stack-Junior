@@ -310,6 +310,7 @@ docker-compose up -d
 ```
 
 6. Execute as migrations
+   
 As migrations já foram geradas, basta rodar o comando de run para aplicar ao seu banco no docker.
 ```bash
 yarn install
