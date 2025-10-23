@@ -16,14 +16,12 @@ export class EventsListenerController {
     assigneeIds: string[];
   }) {
     if (!data.assigneeIds || data.assigneeIds.length === 0) {
-      console.log('⚠️  No assignees to notify');
       return;
     }
 
     const assigneesToNotify = data.assigneeIds.filter(id => id !== data.authorId);
 
     if (assigneesToNotify.length === 0) {
-      console.log('⚠️  All assignees are the task author');
       return;
     }
   }
