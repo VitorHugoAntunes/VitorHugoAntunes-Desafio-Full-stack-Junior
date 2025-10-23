@@ -5,17 +5,17 @@ Sistema de gerenciamento de tarefas com arquitetura de microsserviços, notifica
 
 ## Índice
 
-- [Visão Geral](#-visão-geral)
-- [Arquitetura](#-arquitetura)
-- [Tecnologias Utilizadas](#-tecnologias-utilizadas)
-- [Decisões Técnicas e Trade-offs](#-decisões-técnicas-e-trade-offs)
-- [Funcionalidades](#-funcionalidades)
-- [Pré-requisitos](#-pré-requisitos)
-- [Instalação e Execução](#-instalação-e-execução)
-- [Estrutura do Projeto](#-estrutura-do-projeto)
-- [Testes](#-testes)
-- [Problemas Conhecidos e Melhorias Futuras](#-problemas-conhecidos-e-melhorias-futuras)
-- [Tempo de Desenvolvimento](#-tempo-de-desenvolvimento)
+- [Visão Geral](#visão-geral)
+- [Arquitetura](#arquitetura)
+- [Tecnologias Utilizadas](#tecnologias-utilizadas)
+- [Decisões Técnicas e Trade-offs](#decisões-técnicas-e-trade-offs)
+- [Funcionalidades](#funcionalidades)
+- [Pré-requisitos](#pré-requisitos)
+- [Instalação e Execução](#instalação-e-execução)
+- [Estrutura do Projeto](#estrutura-do-projeto)
+- [Testes](#testes)
+- [Problemas Conhecidos e Melhorias Futuras](#problemas-conhecidos-e-melhorias-futuras)
+- [Tempo de Desenvolvimento](#tempo-de-desenvolvimento)
 
 
 ##  Visão Geral
