@@ -37,6 +37,7 @@ Sistema de gerenciamento de tarefas com suporte a múltiplos usuários, colabora
 ## Arquitetura
 
 O sistema utiliza arquitetura de microsserviços com comunicação via RabbitMQ e REST API.
+
 Abra a imagem em outra aba para ver melhor os detalhes.
 
 ![image](https://raw.githubusercontent.com/VitorHugoAntunes/VitorHugoAntunes-Desafio-Full-stack-Junior/refs/heads/main/assets/diagram.png)
