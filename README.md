@@ -306,9 +306,8 @@ docker-compose up -d
 6. Execute as migrations
 As migrations já foram geradas, basta rodar o comando de run para aplicar ao seu banco no docker.
 ```bash
-docker-compose exec app-auth-service yarn migration:run
-docker-compose exec app-tasks-service yarn migration:run
-docker-compose exec app-notifications-service yarn migration:run
+yarn install
+yarn migration:run
 ```
 
 7. Acesse a aplicação
