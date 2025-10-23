@@ -1,5 +1,5 @@
 {
-  "name": "my-turborepo",
+  "name": "desafio-full-stack-junior",
   "private": true,
   "scripts": {
     "build": "turbo run build",
