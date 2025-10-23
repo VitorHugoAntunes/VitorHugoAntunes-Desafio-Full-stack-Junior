@@ -321,6 +321,7 @@ yarn migration:run
 - Frontend: http://localhost:5173
 - API Gateway: http://localhost:3333
 - Swagger Docs: http://localhost:3333/api/docs
+- Health checks: http://localhost:3333/health
 
 ### Opção 2: Desenvolvimento Local
 
