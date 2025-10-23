@@ -1,0 +1,9 @@
+export { CreateTaskProxyController } from './create-task-proxy.controller';
+export { DeleteTaskProxyController } from './delete-task-proxy.controller';
+export { FetchCommentsProxyController } from './fetch-comments-proxy.controller';
+export { FetchTasksProxyController } from './fetch-tasks-proxy.controller';
+export { GetTaskProxyController } from './get-task-proxy.controller';
+export { UpdateTaskProxyController } from './update-task-proxy.controller';
+export { CreateCommentProxyController } from './create-comment-proxy.controller';
+export { TaskHistoryProxyController } from './task-history-proxy.controller';
+export { TaskStatsProxyController } from './task-stats-proxy.controller';
