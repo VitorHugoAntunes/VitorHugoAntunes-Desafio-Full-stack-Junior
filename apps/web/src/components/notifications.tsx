@@ -27,7 +27,6 @@ export default function Notifications({
   const [open, setOpen] = useState(false);
 
   const handleNotificationClick = (notification: Notification) => {
-    console.log('👆 Clicked notification:', notification.id);
     if (!notification.isRead) {
       markAsRead(notification.id);
     }
