@@ -280,9 +280,11 @@ cd VitorHugoAntunes-Desafio-Full-stack-Junior-main
 ```
 
 2. Configure as variáveis de ambiente
+   
 Já pré configurado, os arquivos ```.env.example``` estão preenchidos com valores padrão para acelerar o processo, mas você pode alterar os valores como desejar.
 
-3. chaves JWT (RSA)
+4. chaves JWT (RSA)
+   
 Também já estão disponibilizadas nos arquivos de variáveis ambientes. Como este projeto não está deployado em nenhuma nuvem e rodará apenas localmente, não tem problema cada git clone compartilhar as mesmas chaves privadas e públicas, mas caso deseje gerar suas próprias chaves, siga as instruções:
 ```bash
 openssl genrsa -out private_key.pem 2048
