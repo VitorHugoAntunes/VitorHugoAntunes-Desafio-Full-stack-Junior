@@ -10,7 +10,6 @@ import { createLogger, NestWinstonLogger } from '@repo/logger';
 async function bootstrap() {
   const logger = createLogger('api-gateway');
   const nestLogger = new NestWinstonLogger(logger);
-  
   const app = await NestFactory.create(AppModule, {
     logger: nestLogger,
   });
