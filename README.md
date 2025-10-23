@@ -272,7 +272,7 @@ Trade-offs:
 1. Clone o repositório
 ```bash
 git clone 
-cd task-management-system
+cd VitorHugoAntunes-Desafio-Full-stack-Junior-main
 ```
 
 2. Configure as variáveis de ambiente
@@ -359,7 +359,7 @@ yarn db:seed
 
 ## Estrutura do Projeto
 ```
-task-management-system/
+VitorHugoAntunes-Desafio-Full-stack-Junior-main/
 ├── apps/
 │   ├── api-gateway/          # Gateway e proxy para microserviços
 │   ├── auth-service/         # Serviço de autenticação
