@@ -41,6 +41,8 @@ Abra a imagem em outra aba para ver melhor os detalhes.
 
 ![image](https://raw.githubusercontent.com/VitorHugoAntunes/VitorHugoAntunes-Desafio-Full-stack-Junior/refs/heads/main/assets/diagram.png?token=GHSAT0AAAAAADK3BLTLMH6KRCQMMARCMTMO2HZS3DA)
 
+Veja o vídeo de demonstração na pasta assets para ter uma visão do sistema funcionando em tempo real com dois usuários ativos.
+
 ### Componentes
 
 1. Frontend (React + Vite)
