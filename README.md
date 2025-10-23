@@ -39,7 +39,7 @@ Sistema de gerenciamento de tarefas com suporte a múltiplos usuários, colabora
 O sistema utiliza arquitetura de microsserviços com comunicação via RabbitMQ e REST API.
 Abra a imagem em outra aba para ver melhor os detalhes.
 
-![image](https://raw.githubusercontent.com/VitorHugoAntunes/VitorHugoAntunes-Desafio-Full-stack-Junior/refs/heads/main/assets/diagram.png?token=GHSAT0AAAAAADK3BLTLMH6KRCQMMARCMTMO2HZS3DA)
+![image](https://raw.githubusercontent.com/VitorHugoAntunes/VitorHugoAntunes-Desafio-Full-stack-Junior/refs/heads/main/assets/diagram.png)
 
 Veja o vídeo de demonstração na pasta assets para ter uma visão do sistema funcionando em tempo real com dois usuários ativos.
 
