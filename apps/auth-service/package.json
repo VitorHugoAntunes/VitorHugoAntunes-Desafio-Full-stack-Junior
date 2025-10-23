@@ -18,7 +18,12 @@
     "test:watch": "vitest",
     "test:cov": "vitest run --coverage",
     "test:e2e": "vitest run --config ./vitest.config.e2e.ts",
-    "test:e2e:watch": "vitest --config ./vitest.config.e2e.ts"
+    "test:e2e:watch": "vitest --config ./vitest.config.e2e.ts",
+    "migration:generate": "typeorm-ts-node-commonjs migration:generate -d typeorm.config.ts",
+    "migration:create": "typeorm-ts-node-commonjs migration:create",
+    "migration:run": "typeorm-ts-node-commonjs migration:run -d typeorm.config.ts",
+    "migration:revert": "typeorm-ts-node-commonjs migration:revert -d typeorm.config.ts",
+    "migration:show": "typeorm-ts-node-commonjs migration:show -d typeorm.config.ts"
   },
   "dependencies": {
     "@nestjs/common": "^11.0.1",
