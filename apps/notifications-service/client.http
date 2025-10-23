@@ -1,0 +1,102 @@
+@baseurl = http://localhost:3333
+@accessToken = {{login.response.body.access_token}}
+@refreshToken = {{login.response.body.refresh_token}}
+@taskId = {{create_task.response.body.task.id}}
+
+# @name register
+POST {{baseurl}}/api/auth/register
+Content-Type: application/json
+
+{
+  "name": "John Doe",
+  "email": "johndoe@gmail.com",
+  "password": "123456"
+}
+
+###
+
+# @name login
+POST {{baseurl}}/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "johndoe@gmail.com",
+  "password": "123456"
+}
+
+###
+
+# @name refresh
+POST {{baseurl}}/api/auth/refresh
+Content-Type: application/json
+
+{
+  "refresh_token": "{{refreshToken}}"
+}
+
+###
+
+# @name create_task
+POST {{baseurl}}/api/tasks
+Content-Type: application/json
+Authorization: Bearer {{accessToken}}
+
+{
+  "title": "Some task title",
+  "description": "Some task description",
+  "dueDate": "2024-12-31",
+  "priority": "HIGH",
+  "status": "IN_PROGRESS",
+  "assigneeIds": []
+}
+
+###
+
+# @name fetch_tasks
+GET {{baseurl}}/api/tasks?page=1&size=20
+Content-Type: application/json
+Authorization: Bearer {{accessToken}}
+
+###
+
+# @name get_task
+GET {{baseurl}}/api/tasks/{{taskId}}
+Content-Type: application/json
+Authorization: Bearer {{accessToken}}
+
+###
+
+# @name update_task
+PUT {{baseurl}}/api/tasks/{{taskId}}
+Content-Type: application/json
+Authorization: Bearer {{accessToken}}
+
+{
+  "title": "Updated task title 2",
+  "description": "Updated description 2"
+}
+
+###
+
+# @name delete_task
+DELETE {{baseurl}}/api/tasks/{{taskId}}
+Content-Type: application/json
+Authorization: Bearer {{accessToken}}
+
+###
+
+# @name create_comment
+POST {{baseurl}}/api/tasks/{{taskId}}/comments
+Content-Type: application/json
+Authorization: Bearer {{accessToken}}
+
+{
+  "content": "Some comment content"
+}
+
+###
+
+# @name fetch_comments
+GET {{baseurl}}/api/tasks/{{taskId}}/comments?page=1&size=20
+Content-Type: application/json
+Authorization: Bearer {{accessToken}}
