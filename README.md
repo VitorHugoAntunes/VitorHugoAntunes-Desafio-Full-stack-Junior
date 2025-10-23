@@ -266,6 +266,7 @@ Trade-offs:
 - **Yarn** 1.22.x ou superior
 - **Docker** e **Docker Compose** (para desenvolvimento com containers)
 - **PostgreSQL** 16.x (se rodar sem Docker)
+- **Dbeaver** ou outra ferramenta semelhante (para se conectar e visualizar as tabelas do banco sem Docker)
 
 
 ## Instalação e Execução
