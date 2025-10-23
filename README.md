@@ -322,6 +322,12 @@ yarn migration:run
 - API Gateway: http://localhost:3333
 - Swagger Docs: http://localhost:3333/api/docs
 - Health checks: http://localhost:3333/health
+- Auth Service: Port 3334
+- Tasks Service: Port 3335
+- Notifications Service: Port 3336
+- PostgreSQL: postgresql://postgres:docker@localhost:5432/app_database
+- RabbitMQ: amqp://admin:admin@localhost:5672
+- RabbitMQ Manegement UI: http://localhost:15672/ (usuário admin e senha admin)
 
 ### Opção 2: Desenvolvimento Local
 
