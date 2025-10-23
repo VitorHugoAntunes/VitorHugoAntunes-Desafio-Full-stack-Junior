@@ -349,11 +349,12 @@ yarn dev
 
 Para popular o banco com dados de exemplo:
 ```bash
-docker-compose exec app-api-gateway yarn db:seed
-
 # Local
 # Na raiz do monorepo
 yarn db:seed
+
+# Caso deseje limpar o banco
+yarn db:clear 
 ```
 
 **Credenciais de teste:**
