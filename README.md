@@ -1,4 +1,4 @@
-# Desafio Full-stack Júnior — Sistema de Gestão de Tarefas Colaborativo
+# Desafio Full-stack Júnior: Sistema de Gestão de Tarefas Colaborativo
 
 Sistema de gerenciamento de tarefas com arquitetura de microsserviços, notificações em tempo real via WebSocket e interface moderna em React.
 
