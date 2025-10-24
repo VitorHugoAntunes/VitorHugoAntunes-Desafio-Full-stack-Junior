@@ -366,8 +366,6 @@ yarn db:seed
 yarn db:clear
 ```
 
-Você também pode limpar o banco com o comando ```yarn db:clear``` na raiz do monorepo.
-
 **Credenciais de teste:**
 - Email: `alice@example.com` | Senha: `password123`
 - Email: `bruno@example.com` | Senha: `password123`
