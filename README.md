@@ -478,7 +478,7 @@ O frontend também contém testes unitários.
 ### Performance
 - [ ] Otimizar bundle size do frontend
 
-## ⏱️ Tempo de Desenvolvimento
+## Tempo de Desenvolvimento
 
 ### Estimativa por Fase
 
