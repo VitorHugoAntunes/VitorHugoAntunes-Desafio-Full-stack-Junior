@@ -334,6 +334,9 @@ yarn migration:run
 1. **Instale as dependências**
 ```bash
 yarn install
+
+cd packages/logger
+yarn dev OU yarn build
 ```
 
 2. **Configure PostgreSQL e RabbitMQ**
@@ -360,8 +363,10 @@ Para popular o banco com dados de exemplo:
 yarn db:seed
 
 # Caso deseje limpar o banco
-yarn db:clear 
+yarn db:clear
 ```
+
+Você também pode limpar o banco com o comando ```yarn db:clear``` na raiz do monorepo.
 
 **Credenciais de teste:**
 - Email: `alice@example.com` | Senha: `password123`
@@ -410,6 +415,8 @@ service/
 
 
 ## Testes
+
+Lembre-se de executar yarn dev ou yarn build antes no packages/logger
 
 ### Executar Testes Unitários
 ```bash
