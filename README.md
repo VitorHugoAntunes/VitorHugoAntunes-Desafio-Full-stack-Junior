@@ -378,7 +378,7 @@ yarn db:clear
 ```
 VitorHugoAntunes-Desafio-Full-stack-Junior-main/
 ├── apps/
-│   ├── api-gateway/          # Gateway e proxy para microserviços
+│   ├── api-gateway/          # Gateway e proxy para microsserviços
 │   ├── auth-service/         # Serviço de autenticação
 │   ├── tasks-service/        # Serviço de tarefas
 │   ├── notifications-service/# Serviço de notificações
@@ -392,7 +392,7 @@ VitorHugoAntunes-Desafio-Full-stack-Junior-main/
 ```
 Existem outros arquivos que você pode alterar conforme seu desejo, como o ```turbo.json``` com configurações do monorepo e os o arquivo ```client.http``` dentro de ```apps/api-gateway``` semelhante às collections do Postman para testar os endpoints sem necessidade de uma interface.
 
-### Estrutura de cada Microserviço
+### Estrutura de cada Microsserviço
 ```
 service/
 ├── src/
